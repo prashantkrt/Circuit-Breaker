@@ -12,7 +12,7 @@ public class AppConfig {
 //    public RestTemplate restTemplate() {
 //        return new RestTemplate();
 //    }
-//or
+//or better approach recommended
     @Bean
     public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder) {
         return restTemplateBuilder.build();
